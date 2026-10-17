@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#F5F2EB">
+    
+    <title>Syed Ahmed | Scientific Computing & Software Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of Syed Ahmed — Computer Science Engineer specializing in Scientific Computing, Numerical Analysis, and Software Development. Projects include Computational Physics simulations, DSA libraries, and Engineering tools using Python, C, and MATLAB. Seeking 2026 internships.">
+    <meta name="keywords" content="Syed Ahmed, Computer Science Portfolio, Scientific Computing, Software Engineer, Data Structures, Algorithms, Python, C, Java, MATLAB, Numerical Methods, Computational Physics, Engineering Simulations, Finite Difference Method, PDE Solving, Hyderabad, Internship 2026">
+    <meta name="author" content="Syed Ahmed">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://syed-ahmed.vercel.app/">
+    <meta property="og:title" content="Syed Ahmed | Scientific Computing & Software Engineering Portfolio">
+    <meta property="og:description" content="Explore projects in Numerical Methods, Engineering Simulations, and Algorithms by Syed Ahmed. Expert in Python, C, and Scientific Computing.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Syed Ahmed | Scientific Computing & Software Engineering Portfolio">
+    <meta property="twitter:description" content="Explore projects in Numerical Methods, Engineering Simulations, and Algorithms by Syed Ahmed. Expert in Python, C, and Scientific Computing.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200">
+
+    <link rel="canonical" href="https://syed-ahmed.vercel.app/" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+
+    <script>
+      (function() {
+        try {
+          const savedTheme = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            document.documentElement.classList.add('dark');
+            const metaTheme = document.querySelector('meta[name="theme-color"]');
+            if (metaTheme) metaTheme.setAttribute('content', '#141311');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              warmDark: {
+                bg: '#141311',
+                surface: '#1A1916',
+                card: '#22201D',
+                border: '#2E2C28',
+                text: '#E8E4DA',
+                muted: '#9C968E'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Syed Ahmed",
+      "url": "https://syed-ahmed.vercel.app/",
+      "jobTitle": "Computer Science Engineer",
+      "alumniOf": "Deccan College of Engineering & Technology",
+      "sameAs": [
+        "https://www.linkedin.com/in/syedahmed-/",
+        "https://github.com/syed-ahmed4"
+      ],
+      "knowsAbout": ["Scientific Computing", "Python", "C", "Java", "MATLAB", "Algorithms", "Data Structures", "Numerical Methods", "Computational Physics"],
+      "description": "Computer Science Engineer specializing in Scientific Computing and Software Development.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Hyderabad",
+        "addressCountry": "India"
+      }
+    }
+    </script>
+
+    <!-- Font Optimization: Preconnect & Subset -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&subset=latin&display=swap" rel="stylesheet">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+      
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px; /* Offset for fixed navbar */
+        -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape on iOS */
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #F5F2EB; /* Warm cream background */
+        color: #2C2A26; /* Warm dark charcoal */
+        overflow-x: hidden; /* Prevent horizontal scroll */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        transition: background-color 0.4s ease, color 0.4s ease;
+      }
+
+      html.dark body {
+        background-color: #141311; /* Warm dark charcoal */
+        color: #E8E4DA;
+      }
+      
+      h1, h2, h3, h4, .font-serif {
+        font-family: 'Playfair Display', serif;
+      }
+
+      /* Hide scrollbar for clean aesthetic in horizontal scrolls if any */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      @keyframes fade-in-up {
+        0% { opacity: 0; transform: translateY(30px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+
+      .animate-fade-in-up {
+        animation: fade-in-up 1s cubic-bezier(0.2, 1, 0.3, 1) forwards;
+      }
+      
+      .animate-delay-200 { animation-delay: 0.2s; }
+      .animate-delay-400 { animation-delay: 0.4s; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
